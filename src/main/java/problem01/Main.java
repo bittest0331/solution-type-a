@@ -13,7 +13,7 @@ public class Main {
 			System.out.print( i + " " );
 			
 			for( int j = 0; j < count; j++ ) {
-				System.out.print( "ì§" );
+				System.out.print( "Â¦" );
 			}
 			
 			System.out.println( "" );			
@@ -21,6 +21,21 @@ public class Main {
 	}
 	
 	public static int countClap(int number) {
-		return 0;
+		
+		int clap = 0;
+		int a = number / 10; //10ÀÇÀÚ¸®
+		int b = number % 10; //1ÀÇÀÚ¸®
+		
+		if(a==3 || a==6 || a==9 ) {
+			clap++;
+		}
+		
+		if(b==3 || b==6 || b==9 ) {
+			clap++;
+		}
+		
+	
+		
+		return clap;
 	}
 }

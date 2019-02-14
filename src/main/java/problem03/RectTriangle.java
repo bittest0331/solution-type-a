@@ -5,16 +5,24 @@ public class RectTriangle extends Shape {
 	private double height;
 
 	public RectTriangle(double width, double height) {
+		this.width = width;
+		this.height = height;
 	}
 
 	@Override
 	public double getArea() {
-		System.out.println("");
-		return 0.;
+		/* System.out.println(""); */
+		
+		double area = width * height / 2 ;
+		
+		return area;
 	}
 
 	@Override
 	public double getPerimeter() {
-		return 0.;
+		
+		double perimeter = width + height + Math.sqrt( width*width + height*height );
+		
+		return perimeter;
 	}
 }
